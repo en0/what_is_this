@@ -1,4 +1,4 @@
-from lib import WeightedGraph
+from mylib import WeightedGraph
 from heapq import heappush, heappop
 
 
