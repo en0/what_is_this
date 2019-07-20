@@ -3,6 +3,12 @@ from heapq import heappush, heappop
 
 
 def find_mst(r: str, g: WeightedGraph):
+    """
+
+    I think the time complexity is O(n*e)
+    where n is the number of vertices and e is the number of edges
+
+    """
     mst = []
     queue = []
     visited = set([r])
