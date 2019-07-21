@@ -67,3 +67,9 @@ class WeightedGraph:
                 line.append("{0:2}".format(" -" if edge is None else edge))
             sb.append(" ".join(line))
         return "\n".join(sb)
+
+    def __iter__(self):
+        return iter(self._vertex_list)
+
+    def __len__(self):
+        return len(self._vertex_list)
