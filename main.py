@@ -21,7 +21,7 @@ def mine(r: str, g: WeightedGraph):
 
     add_edge(r)
 
-    while len(queue) > 0:
+    while len(mst) < len(g) - 1:
         e: tuple = heappop(queue)
         if e[1] in visited:
             continue
